@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="sweet.messager.vk.ui.ZdigerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:weightSum="1"
+            app:titleMargins="0dp"
+            app:contentInsetStart="0dp"
+            style="@style/ActionBar.Transparent.VKMessages.ToolBar">
+            >
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/button_back_zdiger"
+                android:src="@mipmap/ic_toolbar_back"
+                android:background="?attr/selectableItemBackground"
+                android:layout_weight="0.04" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zdigers"
+                android:textSize="18dp"
+                style="@style/ActionBar.Transparent.VKMessages.Title"
+                android:id="@+id/cat_title" />
+            <ImageView
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="right"
+                android:id="@+id/fab"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_add_zdiger">
+                </ImageView>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <include layout="@layout/content_zdiger2" />
+
+
+</android.support.design.widget.CoordinatorLayout>

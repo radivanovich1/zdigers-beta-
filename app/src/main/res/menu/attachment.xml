@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/action_add_stick"
+        android:title="На случай важных переговоров"
+        android:icon="@mipmap/ic_atttach_menu_audio"
+        />
+    <item android:id="@+id/brb"
+        android:title="Big Russian Boss"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/hovan"
+        android:title="Хованский"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/ig"
+        android:title="Ивангай"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/larin"
+        android:title="Ларин"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/tix"
+        android:title="This is Хорошо"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/druj"
+        android:title="Сергей Дружко"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/shur"
+        android:title="Шурыгина"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+    <item android:id="@+id/my_zdigers"
+        android:title="Мои стикеры"
+        android:icon="@mipmap/ic_atttach_menu_doc"
+        />
+
+</menu>

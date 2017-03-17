@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="sweet.messager.vk.ui.New_zdigerActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:contentInsetStart="0dp"
+            >
+            >
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/button_back_new_zdiger"
+                android:src="@mipmap/ic_toolbar_back"
+                android:background="?attr/selectableItemBackground"
+                android:layout_weight="0.04"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Zdiger"
+                android:textSize="18dp"
+                style="@style/ActionBar.Transparent.VKMessages.Title"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_new_zdiger"
+        android:id="@+id/include"
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:text="Начать запись"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/button_record"
+            android:elevation="0dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_mic_black_48dp"
+            android:tint="@color/mainColor"
+
+
+            />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/rec_stat"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Идёт запись..."
+            style="@style/ActionBar.Transparent.VKMessages.Item"/>
+
+        <ImageView
+            android:text="Воспроизвезти"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button_play"
+            android:elevation="0dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_play_circle_outline_black_48dp"
+            android:tint="@color/mainColor"
+            />
+
+        <EditText
+
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            style="@style/ActionBar.Transparent.VKMessages.Item"
+            android:ems="10"
+            android:id="@+id/name_z"
+            android:background="@android:color/transparent"
+            android:hint="Введите название"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Сохранить"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_msg_input"
+            android:background="@color/mainColor"
+            style="@style/ActionBar.Transparent.VKMessages.Item"
+            android:id="@+id/button_save" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/pg_bar"/>
+</android.support.design.widget.CoordinatorLayout>
